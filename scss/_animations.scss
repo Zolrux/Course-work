@@ -1,0 +1,29 @@
+@keyframes roullete {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 340px;
+  }
+}
+
+@keyframes roullete-transform {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(335px);
+  }
+}
+
+@keyframes modal-anim {
+  0% {
+    transform: translateY(-150%);
+  }
+  50% {
+    transform: translateY(10%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

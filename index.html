@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Course-work</title>
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__body">
+					<div class="header__logo">
+						<img src="img/header/logo.png" alt="logo">
+					</div>
+					<nav class="header__nav">
+						<ul class="header__list">
+							<li class="header__item">
+								<a href="#our-services" class="header__link">Услуги</a>
+							</li>
+							<li class="header__item">
+								<a href="#products" class="header__link">Продукция</a>
+							</li>
+							<li class="header__item">
+								<a href="#about" class="header__link">О компании</a>
+							</li>
+							<li class="header__item">
+								<a href="#portfolio" class="header__link">Портфолио</a>
+							</li>
+							<li class="header__item">
+								<a href="#answer-question" class="header__link">Вопрос-ответ</a>
+							</li>
+							<li class="header__item">
+								<a href="#contacts" class="header__link">Контакты</a>
+							</li>
+						</ul>
+						<button class="header__burger">
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>
+					</nav>
+					<div class="header__btns">
+						<button class="header__btn-size btn-size-header _btn _btn-size">
+							<img class="btn-size-header__img" src="img/header/application-icon.svg" alt="application icon">
+							<span>Заявка на замер</span>
+						</button>
+						<button class="header__btn-calc btn-calc-header _btn _btn-calc">
+							<img class="btn-calc-header__img" src="img/header/order-icon.svg" alt="order icon">
+							<span>Заказать расчет</span>
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="modal modal-froze">
+				<div class="modal__overlay">
+					<div class="modal__body modal-froze__body">
+						<button class="modal-close">
+							<img src="img/header/modal-close.svg" alt="modal close">
+						</button>
+						<form action="" class="form modal__form form-modal">
+							<h3 class="form-modal__title form__title">Вызвать замершика на дом</h3>
+							<input class="form-modal__name form__name" type="text" required placeholder="Ваше имя">
+							<input class="form-modal__phone form__phone" type="tel" required placeholder="Номер телефона">
+							<input class="form-modal__mail form__mail" type="email" required placeholder="E-mail">
+							<div class="form-modal__checkbox form__custom-checkbox checkbox">
+								<input class="checkbox__input" id="modal-froze-checkbox" type="checkbox">
+								<label for="modal-froze-checkbox" class="checkbox__label">
+									<span>
+										Я согласен(на) на обработку <a href="#">персональных данных</a>
+									</span>
+								</label>
+							</div>
+							<button class="form-modal__submit form__submit _btn" type="submit">
+								Отправить заявку
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="modal modal-calc">
+				<div class="modal__overlay">
+					<div class="modal__body modal-calc__body">
+						<button class="modal-close">
+							<img src="img/header/modal-close.svg" alt="modal close">
+						</button>
+						<form action="" class="form modal__form form-modal">
+							<h3 class="form-modal__title form__title">Заказать расчет</h3>
+							<input class="form-modal__name form__name" type="text" required placeholder="Ваше имя">
+							<input class="form-modal__phone form__phone" type="tel" required placeholder="Номер телефона">
+							<input class="form-modal__mail form__mail" type="email" required placeholder="E-mail">
+							<div class="form-modal__checkbox form__custom-checkbox checkbox">
+								<input class="checkbox__input" id="modal-calc-checkbox" type="checkbox">
+								<label for="modal-calc-checkbox" class="checkbox__label">
+									<span>
+										Я согласен(на) на обработку <a href="#">персональных данных</a>
+									</span>
+								</label>
+							</div>
+							<button class="form-modal__submit form__submit _btn" type="submit">
+								Отправить заявку
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<section class="main__page page-main">
+				<div class="page-main__container">
+					<div class="page-main__body body-page-main">
+						<div class="body-page-main__column">
+							<h1 class="page-main__title">
+								<span>Окна Хаус -</span>
+								Профессиональный подход
+								к остеклению
+							</h1>
+							<div class="page-main__items">
+								<div class="page-main__item">
+									<div class="page-main__icon">
+										<img src="img/main-page/icon-1.svg" alt="icon 1">
+									</div>
+									<p class="page-main__decr">
+										Современные окна
+										и балконные конструкции
+										по доступным ценам
+									</p>
+								</div>
+								<div class="page-main__item">
+									<div class="page-main__icon">
+										<img src="img/main-page/icon-2.svg" alt="icon 2">
+									</div>
+									<p class="page-main__decr">
+										Квалифицированный
+										подход к решению задач
+										любой сложности
+									</p>
+								</div>
+								<div class="page-main__item">
+									<div class="page-main__icon">
+										<img src="img/main-page/icon-3.svg" alt="icon 3">
+									</div>
+									<p class="page-main__decr">
+										Гарантия <br>
+										высочайшего качества
+										нашей продукции
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="body-page-main__column">
+							<form action="" class="page-main__form form">
+								<h3 class="form__title">Вызвать замершика на дом</h3>
+								<input class="form__name" type="text" required placeholder="Представьтесь, пожалуйста">
+								<input class="form__phone" type="tel" required placeholder="Номер телефона">
+								<input class="form__mail" type="email" required placeholder="E-mail">
+								<div class="form__custom-checkbox checkbox">
+									<input class="checkbox__input" id="header-checkbox" type="checkbox">
+									<label for="header-checkbox" class="checkbox__label">
+										<span>
+											Согласен на обработку персональных данных
+											в соответствии <a href="#">с политикой конфиденциальности</a>
+										</span>
+									</label>
+								</div>
+								<button class="form__submit _btn" type="submit">
+									Отправить заявку
+								</button>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="page-main__bg">
+					<div class="page-main__bg_1">
+						<img src="img/main-page/bg-1.jpg" alt="background 1">
+					</div>
+					<div class="page-main__bg_2">
+						<img src="img/main-page/bg-2.jpg" alt="background 2">
+					</div>
+				</div>
+			</section>
+			<section class="our-services" id="our-services">
+				<div class="our-services__container">
+					<h2 class="our-services__title _title">Наши услуги</h2>
+					<div class="our-services__body">
+						<a href="#" class="our-services__item item-our-services">
+							<div class="item-our-services__body">
+								<div class="item-our-services__top">
+									<div class="item-our-services__icon">
+										<img src="img/our-services/window.svg" alt="Установка окон иконка">
+									</div>
+									<h3 class="item-our-services__title _title">
+										Установка<br>пластиковых окон
+									</h3>
+								</div>
+								<div class="item-our-services__bottom">
+									<p class="item-our-services__descr">
+										Устанавливаем пластиковые окна Rehau
+										от проверенного производителя с
+										гарантией качества
+									</p>
+								</div>
+							</div>
+							<img class="item-our-services__bg" src="img/our-services/window-bg.jpg" alt="Window image">
+							<div class="item-our-services__arrow">
+								<svg width="40" height="21" viewBox="0 0 40 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M23.3846 1.75L38 10.75L23.3846 19.75" stroke="white" stroke-width="2" />
+									<path d="M0 10.75H37.0256" stroke="white" stroke-width="2" />
+								</svg>
+							</div>
+						</a>
+						<a href="#" class="our-services__item item-our-services">
+							<div class="item-our-services__body">
+								<div class="item-our-services__top">
+									<div class="item-our-services__icon">
+										<img src="img/our-services/balcony.svg" alt="Остеклению балконов иконка">
+									</div>
+									<h3 class="item-our-services__title _title">
+										Остекление балконов<br>
+										и лоджий
+									</h3>
+								</div>
+								<div class="item-our-services__bottom">
+									<p class="item-our-services__descr">
+										Занимаемся остеклением и отделкой
+										балконов и лоджий.
+										Теплое и холодное остекление, изготовление выносов и крыш.
+										Беремся за сложные
+										объекты
+									</p>
+								</div>
+							</div>
+							<img class="item-our-services__bg" src="img/our-services/balcony-bg.jpg" alt="Balcony image">
+							<div class="item-our-services__arrow">
+								<svg width="40" height="21" viewBox="0 0 40 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M23.3846 1.75L38 10.75L23.3846 19.75" stroke="white" stroke-width="2" />
+									<path d="M0 10.75H37.0256" stroke="white" stroke-width="2" />
+								</svg>
+							</div>
+						</a>
+						<a href="#" class="our-services__item item-our-services">
+							<div class="item-our-services__body">
+								<div class="item-our-services__top">
+									<div class="item-our-services__icon">
+										<img src="img/our-services/house.svg" alt="Остекление коттеджей иконка">
+									</div>
+									<h3 class="item-our-services__title _title">
+										Остекление<br>
+										коттеджей и дач
+									</h3>
+								</div>
+								<div class="item-our-services__bottom">
+									<p class="item-our-services__descr">
+										Остекление и отделка под ключ:
+										от коттеджей и дач до террас
+										и беседок. Выделяем личного
+										технолога под каждый объект
+									</p>
+								</div>
+							</div>
+							<img class="item-our-services__bg" src="img/our-services/house-bg.jpg" alt="House image">
+							<div class="item-our-services__arrow">
+								<svg width="40" height="21" viewBox="0 0 40 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M23.3846 1.75L38 10.75L23.3846 19.75" stroke="white" stroke-width="2" />
+									<path d="M0 10.75H37.0256" stroke="white" stroke-width="2" />
+								</svg>
+							</div>
+						</a>
+						<a href="#" class="our-services__item item-our-services">
+							<div class="item-our-services__body">
+								<div class="item-our-services__top">
+									<div class="item-our-services__icon">
+										<img src="img/our-services/glazing.svg" alt="Остекление корпоративных обьектов иконка">
+									</div>
+									<h3 class="item-our-services__title _title">
+										Остекление<br>
+										корпоративных объектов
+									</h3>
+								</div>
+								<div class="item-our-services__bottom">
+									<p class="item-our-services__descr">
+										Реализуем сложные проекты
+										по остеклению торговых центров,
+										ресторанов, производственных помещений
+										и офисов
+									</p>
+								</div>
+							</div>
+							<img class="item-our-services__bg" src="img/our-services/glazing-bg.jpg" alt="Glazing image">
+							<div class="item-our-services__arrow">
+								<svg width="40" height="21" viewBox="0 0 40 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M23.3846 1.75L38 10.75L23.3846 19.75" stroke="white" stroke-width="2" />
+									<path d="M0 10.75H37.0256" stroke="white" stroke-width="2" />
+								</svg>
+							</div>
+						</a>
+					</div>
+				</div>
+			</section>
+			<section class="products" id="products">
+				<div class="products__container">
+					<h2 class="products__title _title">Продукция</h2>
+					<div class="products__tabs _tabs">
+						<button class="products__tab _tab _active">Стандарт</button>
+						<button class="products__tab _tab">Бизнес</button>
+						<button class="products__tab _tab">Премиум</button>
+						<button class="products__tab _tab">Эксклюзив</button>
+					</div>
+					<div class="products__tab-content _active">
+						<div class="products__body">
+							<div class="products__slider slider-products">
+								<div class="slider-products__slide">
+									<div class="slider-products__column">
+										<img src="img/products/slider-1.jpg" alt="slider image">
+									</div>
+									<div class="slider-products__column">
+										<div class="slider-products__content">
+											<h3 class="slider-products__title">Rehau Blitz New</h3>
+											<p class="slider-products__text">
+												Сохраняют тепло в доме, защищают от шума
+												и вписываются в любой интерьер.
+												Практичный выбор
+											</p>
+											<table class="slider-products__table">
+												<tr>
+													<td class="slider-products__td slider-products__td_1">Системная глубина</td>
+													<td class="slider-products__td slider-products__td_2">
+														...............................................
+													</td>
+													<td class="slider-products__td slider-products__td_3 ">
+														60/60 мм</td>
+												</tr>
+												<tr>
+													<td class="slider-products__td slider-products__td_1">Ширина стеклопакета</td>
+													<td class="slider-products__td slider-products__td_2">
+														...........................................</td>
+													<td class="slider-products__td slider-products__td_3 ">
+														24/31 мм</td>
+												</tr>
+												<tr>
+													<td class="slider-products__td slider-products__td_1">Воздушные камеры</td>
+													<td class="slider-products__td slider-products__td_2">
+														...............................................
+													</td>
+													<td class="slider-products__td slider-products__td_3">3
+													</td>
+												</tr>
+												<tr>
+													<td class="slider-products__td slider-products__td_1">Теплосопротивление</td>
+													<td class="slider-products__td slider-products__td_2">
+														............................................</td>
+													<td class="slider-products__td slider-products__td_3">
+														0,70 м2С/ВТ</td>
+												</tr>
+											</table>
+										</div>
+									</div>
+								</div>
+								<div class="slider-products__slide">
+									<div class="slider-products__column">
+										<img src="img/products/slider-1.jpg" alt="slider image">
+									</div>
+									<div class="slider-products__column">
+										<div class="slider-products__content">
+											<h3 class="slider-products__title">Rehau Blitz New</h3>
+											<p class="slider-products__text">
+												Сохраняют тепло в доме, защищают от шума
+												и вписываются в любой интерьер.
+												Практичный выбор
+											</p>
+											<table class="slider-products__table">
+												<tr>
+													<td class="slider-products__td slider-products__td_1">Системная глубина</td>
+													<td class="slider-products__td slider-products__td_2">
+														...............................................
+													</td>
+													<td class="slider-products__td slider-products__td_3">60/60 мм</td>
+												</tr>
+												<tr>
+													<td class="slider-products__td slider-products__td_1">Ширина стеклопакета</td>
+													<td class="slider-products__td slider-products__td_2">
+														...........................................</td>
+													<td class="slider-products__td slider-products__td_3">24/31 мм</td>
+												</tr>
+												<tr>
+													<td class="slider-products__td slider-products__td_1">Воздушные камеры</td>
+													<td class="slider-products__td slider-products__td_2">
+														...............................................
+													</td>
+													<td class="slider-products__td slider-products__td_3">3</td>
+												</tr>
+												<tr>
+													<td class="slider-products__td slider-products__td_1">Теплосопротивление</td>
+													<td class="slider-products__td slider-products__td_2">
+														............................................</td>
+													<td class="slider-products__td slider-products__td_3">0,70 м2С/ВТ</td>
+												</tr>
+											</table>
+										</div>
+									</div>
+								</div>
+								<div class="slider-products__slide">
+									<div class="slider-products__column">
+										<img src="img/products/slider-1.jpg" alt="slider image">
+									</div>
+									<div class="slider-products__column">
+										<div class="slider-products__content">
+											<h3 class="slider-products__title">Rehau Blitz New</h3>
+											<p class="slider-products__text">
+												Сохраняют тепло в доме, защищают от шума
+												и вписываются в любой интерьер.
+												Практичный выбор
+											</p>
+											<table class="slider-products__table">
+												<tr>
+													<td class="slider-products__td slider-products__td_1">Системная глубина</td>
+													<td class="slider-products__td slider-products__td_2">
+														...............................................
+													</td>
+													<td class="slider-products__td slider-products__td_3">60/60 мм</td>
+												</tr>
+												<tr>
+													<td class="slider-products__td slider-products__td_1">Ширина стеклопакета</td>
+													<td class="slider-products__td slider-products__td_2">
+														...........................................</td>
+													<td class="slider-products__td slider-products__td_3">24/31 мм</td>
+												</tr>
+												<tr>
+													<td class="slider-products__td slider-products__td_1">Воздушные камеры</td>
+													<td class="slider-products__td slider-products__td_2">
+														...............................................
+													</td>
+													<td class="slider-products__td slider-products__td_3">3</td>
+												</tr>
+												<tr>
+													<td class="slider-products__td slider-products__td_1">Теплосопротивление</td>
+													<td class="slider-products__td slider-products__td_2">
+														............................................</td>
+													<td class="slider-products__td slider-products__td_3">0,70 м2С/ВТ</td>
+												</tr>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="products__tab-content">
+						<div class="body">
+							<p>TAB-2</p>
+						</div>
+					</div>
+					<div class="products__tab-content">
+						<div class="body">
+							<p>TAB-3</p>
+						</div>
+					</div>
+					<div class="products__tab-content">
+						<div class="body">
+							<p>TAB-4</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="guarantee" id="guarantee">
+				<div class="guarantee__container">
+					<div class="guarantee__wrapper">
+						<div class="guarantee__logo">
+							<img src="img/guarantee/logo.png" alt="logo guarantee">
+						</div>
+						<div class="guarantee__body">
+							<div class="guarantee__column">
+								<div class="guarantee__icon">
+									<img src="img/guarantee/sertificate.svg" alt="sertificate icon">
+								</div>
+								<p class="guarantee__descr">
+									Сертифицированный
+									производитель Rehau
+								</p>
+							</div>
+							<div class="guarantee__column">
+								<div class="guarantee__icon">
+									<img src="img/guarantee/inovation.svg" alt="inovation icon">
+								</div>
+								<p class="guarantee__descr">
+									Инновационный
+									оконный завод
+								</p>
+							</div>
+							<div class="guarantee__column">
+								<div class="guarantee__icon">
+									<img src="img/guarantee/leader.svg" alt="leader icon">
+								</div>
+								<p class="guarantee__descr">
+									Лидер по переработке
+									профилей Rehau в Украине
+								</p>
+							</div>
+							<div class="guarantee__column">
+								<div class="guarantee__icon">
+									<img src="img/guarantee/equipment.svg" alt="equipment icon">
+								</div>
+								<p class="guarantee__descr">
+									Высокотехнологичное
+									автоматизированное
+									оборудование
+								</p>
+							</div>
+							<div class="guarantee__column">
+								<div class="guarantee__icon">
+									<img src="img/guarantee/assortment-products.svg" alt="assortment products icon">
+								</div>
+								<p class="guarantee__descr">
+									Широкий
+									ассортимент
+									продукции
+								</p>
+							</div>
+						</div>
+						<img class="guarantee__bg" src="img/guarantee/bg.jpg" alt="background image">
+					</div>
+					<div class="guarantee__btn-body">
+						<button class="guarantee__btn _btn _btn-calc">
+							<img class="guarantee__img" src="img/header/order-icon.svg" alt="order icon">
+							<span>Заказать расчет</span>
+						</button>
+					</div>
+				</div>
+			</section>
+			<section class="about" id="about">
+				<div class="about__container">
+					<h2 class="about__title _title">О компании</h2>
+					<div class="about__tabs _tabs">
+						<button class="about__tab _tab _active">
+							Описание
+						</button>
+						<button class="about__tab _tab">
+							Как мы работаем
+						</button>
+						<button class="about__tab _tab">
+							Отзывы
+						</button>
+						<button class="about__tab _tab">
+							Сертификаты
+						</button>
+					</div>
+					<div class="about__tab-content _active">
+						<div class="about__body">
+							<div class="about__column">
+								<div class="about__logo">
+									<img src="img/about/logo.png" alt="logo about">
+								</div>
+								<p class="about__text">
+									Мы помогаем клиентам подбирать решения, учитывая пожежелания к характеристикам окна и его
+									стоимости. Окно - это объект, которым Вы будете пользоваться много лет, поэтому для нас очень
+									важно, чтобы Вы сделали правильный выбор.
+								</p>
+							</div>
+							<div class="about__column column-about">
+								<div class="column-about__video">
+									<iframe width="0" height="0" src="https://www.youtube.com/embed/jpdd5fIQ-18"
+										title="YouTube video player" frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen></iframe>
+								</div>
+							</div>
+						</div>
+						<div class="about__items">
+							<div class="about__item item-about">
+								<div class="item-about__icon">
+									<img src="img/about/professionalism.svg" alt="professionalism icon">
+								</div>
+								<div class="item-about__text">
+									<h4 class="item-about__title">профессионализм</h4>
+									<p class="item-about__desc">
+										Бригада профессиональных
+										мастеров по монтажу
+										и обслуживанию
+									</p>
+								</div>
+							</div>
+							<div class="about__item item-about">
+								<div class="item-about__icon">
+									<img src="img/about/pricing.svg" alt="pricing icon">
+								</div>
+								<div class="item-about__text">
+									<h4 class="item-about__title">Ценообразование</h4>
+									<p class="item-about__desc">
+										Лучшие цены на рынке
+										пластиковых окон
+									</p>
+								</div>
+							</div>
+							<div class="about__item item-about">
+								<div class="item-about__icon">
+									<img src="img/about/mobility.svg" alt="mobility icon">
+								</div>
+								<div class="item-about__text">
+									<h4 class="item-about__title">Мобильность</h4>
+									<p class="item-about__desc">
+										Заключение договора
+										на дому
+									</p>
+								</div>
+							</div>
+							<div class="about__item item-about">
+								<div class="item-about__icon">
+									<img src="img/about/loyalty.svg" alt="loyalty icon">
+								</div>
+								<div class="item-about__text">
+									<h4 class="item-about__title">Лояльность</h4>
+									<p class="item-about__desc">
+										99% клиентов рекомендуют
+										нас своим друзьям
+									</p>
+								</div>
+							</div>
+							<div class="about__item item-about">
+								<div class="item-about__icon">
+									<img src="img/about/speed.svg" alt="speed icon">
+								</div>
+								<div class="item-about__text">
+									<h4 class="item-about__title">Скорость</h4>
+									<p class="item-about__desc">
+										Короткие сроки
+										установки изделий
+									</p>
+								</div>
+							</div>
+							<div class="about__item item-about">
+								<div class="item-about__icon">
+									<img src="img/about/quality-service.svg" alt="quality service icon">
+								</div>
+								<div class="item-about__text">
+									<h4 class="item-about__title">Служба качества</h4>
+									<p class="item-about__desc">
+										Безупречное качество
+										и контроль изделий ПВХ
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="about__btn-body">
+							<button class="about__btn _btn-size _btn">
+								<img class="about__icon" src="img/header/application-icon.svg" alt="application icon">
+								<span>Оформить заявку на замер</span>
+							</button>
+						</div>
+					</div>
+					<div class="about__tab-content">
+						<div class="about__how-we-work how-we-work-about">
+							<div class="how-we-work-about__item">
+								<div class="how-we-work-about__icon">
+									<img src="img/about/free.svg" alt="free delivery icon">
+								</div>
+								<h3 class="how-we-work-about__title">
+									Бесплатно приедем
+								</h3>
+								<p class="how-we-work-about__text">
+									Выезжаем бесплатно во все
+									города Московской области
+								</p>
+							</div>
+							<div class="how-we-work-about__item">
+								<div class="how-we-work-about__icon">
+									<img src="img/about/everyday.svg" alt="everyday icon">
+								</div>
+								<h3 class="how-we-work-about__title">
+									Выезжаем ежедневно
+								</h3>
+								<p class="how-we-work-about__text">
+									С 9 до 21 без выходных
+									и праздников
+								</p>
+							</div>
+							<div class="how-we-work-about__item">
+								<div class="how-we-work-about__icon">
+									<img src="img/about/samples.svg" alt="samples icon">
+								</div>
+								<h3 class="how-we-work-about__title">
+									Образцы с собой
+								</h3>
+								<p class="how-we-work-about__text">
+									Покажем образцы профильных
+									систем и материалов отделки
+								</p>
+							</div>
+							<div class="how-we-work-about__item">
+								<div class="how-we-work-about__icon">
+									<img src="img/about/price.svg" alt="price icon">
+								</div>
+								<h3 class="how-we-work-about__title">
+									Стоимость
+								</h3>
+								<p class="how-we-work-about__text">
+									Называем точную стоимость
+									заказа на месте
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="about__tab-content">
+						<p>Норм сайт</p>
+					</div>
+					<div class="about__tab-content">
+						<p>Сертификат о норм работе</p>
+					</div>
+				</div>
+			</section>
+			<section class="portfolio" id="portfolio">
+				<div class="portfolio__container">
+					<div class="portfolio__body">
+						<h2 class="portfolio__title _title">Портфолио</h2>
+						<div class="portfolio__slider slider-portfolio">
+							<div class="slider-portfolio__slide">
+								<img src="img/portfolio/slider-1.jpg" alt="slider image">
+							</div>
+							<div class="slider-portfolio__slide">
+								<img src="img/portfolio/slider-2.jpg" alt="slider image">
+							</div>
+							<div class="slider-portfolio__slide">
+								<img src="img/portfolio/slider-3.jpg" alt="slider image">
+							</div>
+							<div class="slider-portfolio__slide">
+								<img src="img/portfolio/slider-4.jpg" alt="slider image">
+							</div>
+							<div class="slider-portfolio__slide">
+								<img src="img/portfolio/slider-3.jpg" alt="slider image">
+							</div>
+							<div class="slider-portfolio__slide">
+								<img src="img/portfolio/slider-1.jpg" alt="slider image">
+							</div>
+							<div class="slider-portfolio__slide">
+								<img src="img/portfolio/slider-2.jpg" alt="slider image">
+							</div>
+						</div>
+					</div>
+					<div class="portfolio__map">
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2555.9345459336273!2d30.7228438360719!3d46.482255272404096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c63193a7617f05%3A0x92726e17e9293002!2sDerzhavnyy%20Universytet%20Intelektual%CA%B9nykh%20Tekhnolohiy%20I%20Zv&#39;yazku!5e0!3m2!1sen!2sua!4v1654187935411!5m2!1sen!2sua"
+							width="0" height="0" style="border:0;" allowfullscreen="" loading="lazy"
+							referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
+				</div>
+			</section>
+			<section class="answer-question" id="answer-question">
+				<div class="answer-question__container">
+					<div class="answer-question__body">
+						<h2 class="answer-question__title _title">Вопрос-ответ</h2>
+						<div class="answer-question__spoilers">
+							<div class="answer-question__spoiler spoiler-answer-question _active">
+								<div class="spoiler-answer-question__header">
+									<div class="spoiler-answer-question__label">
+										Сколько по времени занимает изготовление пластиковых окон?
+									</div>
+									<div class="spoiler-answer-question__arrow">
+										<span></span>
+										<span></span>
+									</div>
+								</div>
+								<div class="spoiler-answer-question__content">
+									От 1 до 3 часов, все зависит от сложности задачи.
+								</div>
+							</div>
+							<div class="answer-question__spoiler spoiler-answer-question">
+								<div class="spoiler-answer-question__header">
+									<div class="spoiler-answer-question__label">
+										Какие существуют способы оплаты?
+									</div>
+									<div class="spoiler-answer-question__arrow">
+										<span></span>
+										<span></span>
+									</div>
+								</div>
+								<div class="spoiler-answer-question__content">
+									Моно, приват либо наличный платеж
+								</div>
+							</div>
+							<div class="answer-question__spoiler spoiler-answer-question">
+								<div class="spoiler-answer-question__header">
+									<div class="spoiler-answer-question__label">
+										Где я могу посмотреть образцы?
+									</div>
+									<div class="spoiler-answer-question__arrow">
+										<span></span>
+										<span></span>
+									</div>
+								</div>
+								<div class="spoiler-answer-question__content">
+									На нашем Портфолио
+								</div>
+							</div>
+							<div class="answer-question__spoiler spoiler-answer-question">
+								<div class="spoiler-answer-question__header">
+									<div class="spoiler-answer-question__label">
+										Зачем вызывать замерщика? Я могу дать размеры
+									</div>
+									<div class="spoiler-answer-question__arrow">
+										<span></span>
+										<span></span>
+									</div>
+								</div>
+								<div class="spoiler-answer-question__content">
+									Замерщик измеряет качественно после чего обговариваеться персоналом
+								</div>
+							</div>
+							<div class="answer-question__spoiler spoiler-answer-question">
+								<div class="spoiler-answer-question__header">
+									<div class="spoiler-answer-question__label">
+										Хотелось бы отделать балкон. Поможете?
+									</div>
+									<div class="spoiler-answer-question__arrow">
+										<span></span>
+										<span></span>
+									</div>
+								</div>
+								<div class="spoiler-answer-question__content">
+									Конечно! Наша команда профессионалов тщательно подойдет к поставленной проблеме
+								</div>
+							</div>
+							<div class="answer-question__spoiler spoiler-answer-question">
+								<div class="spoiler-answer-question__header">
+									<div class="spoiler-answer-question__label">
+										Мне надо нанимать грузчиков для подъема?
+									</div>
+									<div class="spoiler-answer-question__arrow">
+										<span></span>
+										<span></span>
+									</div>
+								</div>
+								<div class="spoiler-answer-question__content">
+									Нет, команда мастеров все сами аккуратно доставят и внесут.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="contacts" id="contacts">
+				<div class="contacts__container">
+					<div class="contacts__body">
+						<h2 class="contacts__title _title">Контакты</h2>
+						<div class="contacts__content">
+							<div class="contacts__column contacts__column_left">
+								<p class="contacts__label">Бесплатная консультация:</p>
+								<div class="contacts__phones">
+									<a href="tel:380633431401" class="contacts__phone">38 (063) 34 - 31 - 401</a>
+									<a href="tel:380961093140" class="contacts__phone">38 (096) 109 - 31 - 40</a>
+								</div>
+								<a href="" class="contacts__location">г. Одесса, ул. Торгова, д.54, оф.303</a>
+								<a href="mailto:okna@haus.ua" class="contacts__mail">okna@haus.ua</a>
+								<p class="contacts__text">
+									Установку должны выполнять только эксперты. Нам доверяют сотни семей.
+									Узнайте поробнее, какие решения вам подходят.
+									Вы можете приобрести недорогие товары
+									при гарантированно
+									высоком качестве.
+								</p>
+								<div class="contacts__socials">
+									<a href="#" class="contacts__social ">
+										<svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path class="contacts__facebook"
+												d="M13.6502 20.2893V10.8335H12.0195V9.39772H13.6502V8.23883C13.6502 7.50725 13.7151 6.9637 13.8451 6.60817C14.0228 6.12956 14.3339 5.74327 14.7783 5.44927C15.2296 5.14843 15.8586 4.99802 16.6654 4.99802C17.185 4.99802 17.7593 5.05955 18.3883 5.18262L18.1114 6.79277C17.7286 6.7244 17.3662 6.69021 17.0243 6.69021C16.4637 6.69021 16.0671 6.80986 15.8347 7.04916C15.6022 7.28846 15.486 7.7363 15.486 8.39266V9.39772H17.6089V10.8335H15.486V20.2893H13.6502Z"
+												fill="#EF7F1A" />
+											<path d="M22.8775 1.00366H1.76468V20.8465H22.8775V1.00366Z" stroke="#EF7F1A"
+												stroke-width="2" stroke-miterlimit="22.9256" stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+									</a>
+									<a href="#" class="contacts__social">
+										<svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path d="M22.9597 1.00366H1.84686V20.8465H22.9597V1.00366Z" stroke="#EF7F1A"
+												stroke-width="2" stroke-miterlimit="22.9256" stroke-linecap="round"
+												stroke-linejoin="round" />
+											<path
+												d="M12.4827 15.1317C14.8498 15.1317 16.7687 13.2128 16.7687 10.8456C16.7687 8.47851 14.8498 6.55957 12.4827 6.55957C10.1155 6.55957 8.19659 8.47851 8.19659 10.8456C8.19659 13.2128 10.1155 15.1317 12.4827 15.1317Z"
+												stroke="#EF7F1A" stroke-width="2" stroke-miterlimit="22.9256" stroke-linecap="round"
+												stroke-linejoin="round" />
+											<path
+												d="M19.6261 5.60721C20.0644 5.60721 20.4198 5.25185 20.4198 4.81349C20.4198 4.37513 20.0644 4.01978 19.6261 4.01978C19.1877 4.01978 18.8324 4.37513 18.8324 4.81349C18.8324 5.25185 19.1877 5.60721 19.6261 5.60721Z"
+												stroke="#EF7F1A" stroke-width="2" stroke-miterlimit="22.9256" stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+									</a>
+									<a href="#" class="contacts__social">
+										<svg width="25" height="22" viewBox="0 0 25 22" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path d="M23.0419 1.00366H1.92908V20.8465H23.0419V1.00366Z" stroke="#EF7F1A"
+												stroke-width="2" stroke-miterlimit="22.9256" stroke-linecap="round"
+												stroke-linejoin="round" />
+											<path
+												d="M7.80255 9.73455L18.1208 5.44849L14.946 16.878L10.6599 14.1793L7.6438 14.3381L13.0411 10.8457"
+												stroke="#EF7F1A" stroke-width="2" stroke-miterlimit="22.9256" stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+									</a>
+									<a href="#" class="contacts__social">
+										<svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path d="M22.9654 1.00366H1.85254V20.8465H22.9654V1.00366Z" stroke="#EF7F1A"
+												stroke-width="2" stroke-miterlimit="22.9256" stroke-linecap="round"
+												stroke-linejoin="round" />
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M10.1071 6.40088L16.1394 10.6869L10.1071 14.338V6.40088Z" stroke="#EF7F1A"
+												stroke-width="2" stroke-miterlimit="22.9256" stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+									</a>
+								</div>
+								<div class="contacts__image">
+									<img src="img/contacts/content.png" alt="employees">
+								</div>
+							</div>
+							<div class="contacts__column contacts__column_right">
+								<form action="" class="contacts__form form-contacts form">
+									<h3 class="form-contacts__title form__title">Остались вопросы?</h3>
+									<input class="form-contacts__name form__name" type="text" required placeholder="Ваше имя">
+									<input class="form-contacts__mail form__mail" type="email" required placeholder="E-mail">
+									<textarea class="form-contacts__reviews form__reviews" placeholder="Ваш отзыв"></textarea>
+									<div class="form-contacts__checkbox form__checkbox checkbox">
+										<input class="checkbox__input" id="contacts-checkbox" type="checkbox">
+										<label for="contacts-checkbox" class="form-contacts__label checkbox__label">
+											<span>
+												Я согласен(на) на обработку <a href="#">персональных данных</a>
+											</span>
+										</label>
+									</div>
+									<button class="form-contacts__submit form__submit _btn" type="submit">
+										Отправить сообщение
+									</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__body">
+					<div class="footer__column footer__column_left">
+						<div class="footer__image">
+							<img src="img/footer/logo.svg" alt="footer logo">
+						</div>
+						<p class="footer__copyright">
+							&copy; ООО “Окна Хаус”, 2011 - 2022
+						</p>
+					</div>
+					<div class="footer__column footer__column_right">
+						<a href="#" class="footer__confidentiality">Политика кофиденциальности</a>
+						<a href="#" class="footer__agreement">Пользовательское соглашение</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<button class="scroll-top">
+			<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="#fff" fill-rule="evenodd"
+				clip-rule="evenodd">
+				<path d="M11 2.206l-6.235 7.528-.765-.645 7.521-9 7.479 9-.764.646-6.236-7.53v21.884h-1v-21.883z" />
+			</svg>
+		</button>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script defer src="js/slider.js"></script>
+	<script defer src="js/script.js"></script>
+</body>
+
+</html>

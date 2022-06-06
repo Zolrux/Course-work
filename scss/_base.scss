@@ -1,0 +1,149 @@
+// imports
+
+@import "fonts";
+@import "vars";
+
+/* Обнуление стилей */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+img {
+  vertical-align: top;
+}
+html,
+body {
+  height: 100%;
+}
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+body {
+  line-height: 1;
+  font-family: "Roboto";
+  font-weight: 400;
+  background-color: #e5e5e5;
+  color: $black;
+}
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+[class*="__container"] {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.wrapper {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+  .scroll-top {
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: $accent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(150%);
+    opacity: 0;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease, opacity 0.6s ease;
+    cursor: pointer;
+    z-index: 99;
+    &._show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    & > svg {
+      transition: fill 0.3s ease;
+    }
+    &:hover {
+      background-color: $white;
+      box-shadow: 1px 1px 15px $accent;
+    }
+    &:hover > svg {
+      fill: $black;
+    }
+    @media (max-width: 520px) {
+      & {
+        bottom: 15px;
+        right: 15px;
+      }
+    }
+  }
+}
+
+._btn {
+  color: $white;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: 700;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+._title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 116.67%;
+  color: $blue-title;
+}
+
+._tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 35px;
+}
+
+._tab {
+  background: transparent;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 116.67%;
+  &._active {
+    padding: 8px 25px;
+    background-color: $accent;
+    color: $white;
+    border-radius: 3px;
+    font-weight: 700;
+  }
+}

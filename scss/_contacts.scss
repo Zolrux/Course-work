@@ -1,0 +1,321 @@
+@import "vars";
+@import "fonts";
+
+.contacts {
+  padding: 43px 0px 41px 0px;
+
+  &__title {
+    text-align: center;
+    margin: 0px 0px 58px 0px;
+    @media (max-width: 768px) {
+      & {
+        font-size: 21px;
+        margin: 0px 0px 30px 0px;
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 1100px) {
+      & {
+        flex-direction: column;
+      }
+    }
+  }
+
+  &__column {
+    align-self: stretch;
+    &_left {
+      position: relative;
+      flex: 1 0 57.416%;
+      padding: 0px 0px 0px 53px;
+      @media (max-width: 1100px) {
+        &:not(:last-child) {
+          margin: 0px 0px 25px 0px;
+        }
+      }
+      @media (max-width: 768px) {
+        padding: 0px;
+      }
+    }
+
+    &_right {
+      flex: 1 0 42.583%;
+      background: $white;
+      border-radius: 10px;
+      box-shadow: 0px 4px 15px rgba($black, 0.15);
+      padding: 55px 57px 50px 60px;
+      @media (max-width: 768px) {
+        & {
+          padding: 30px;
+        }
+      }
+    }
+  }
+
+  &__label {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 116.67%;
+    color: $blue-title;
+    margin: 0px 0px 10px 0px;
+  }
+
+  &__phones {
+    position: relative;
+    max-width: 550px;
+    display: flex;
+    align-items: center;
+    padding: 0px 0px 0px 52px;
+    margin: 0px 0px 42px 0px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 25px;
+      height: 27px;
+      background: url("../img/contacts/phone.svg") 0 0 no-repeat;
+    }
+    @media (max-width: 620px) {
+      & {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      &:not(:last-child) {
+        margin: 0px 0px 30px 0px;
+      }
+    }
+  }
+
+  &__phone {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 163.64%;
+    flex-grow: 1;
+    &:first-child {
+      margin: 0px 35px 0px 0px;
+      @media (max-width: 620px) {
+        margin: 0;
+      }
+    }
+  }
+
+  &__location {
+    position: relative;
+    display: block;
+    font-size: 18px;
+    line-height: 116.67%;
+    padding: 0px 0px 0px 52px;
+    margin: 0px 0px 28px 0px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 20px;
+      height: 27px;
+      background: url("../img/contacts/location.svg") 0 0 no-repeat;
+    }
+    @media (max-width: 768px) {
+      & {
+        font-size: 16px;
+      }
+    }
+  }
+
+  &__mail {
+    position: relative;
+    display: block;
+    font-size: 18px;
+    line-height: 116.67%;
+    padding: 0px 0px 0px 52px;
+    margin: 0px 0px 58px 0px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 22px;
+      height: 22px;
+      background: url("../img/contacts/mail.svg") 0 0 no-repeat;
+    }
+    @media (max-width: 768px) {
+      & {
+        font-size: 16px;
+        margin: 0px 0px 30px 0px;
+      }
+    }
+  }
+
+  &__text {
+    max-width: 228px;
+    font-size: 16px;
+    line-height: 137.5%;
+    color: $blue-title;
+    &:not(:last-child) {
+      margin: 0px 0px 30px 0px;
+    }
+    @media (max-width: 768px) {
+      & {
+        max-width: 100%;
+      }
+    }
+  }
+
+  &__socials {
+    display: flex;
+    align-items: center;
+    column-gap: 14px;
+  }
+
+  &__social {
+    cursor: pointer;
+    svg > path[stroke] {
+      transition: stroke 0.3s ease 0s;
+    }
+    svg > .contacts__facebook {
+      transition: fill 0.3 ease 0s;
+    }
+    &:hover svg > .contacts__facebook {
+      fill: $blue-title;
+    }
+    &:hover svg > path[stroke] {
+      stroke: $blue-title;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    right: -20px;
+    bottom: -41px;
+    @media (max-width: 1100px) {
+      & {
+        right: 0;
+        bottom: -25px;
+      }
+    }
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__form {
+  }
+  @media (max-width: 768px) {
+    & {
+      padding: 25px 0;
+    }
+  }
+}
+.form-contacts {
+  &__title {
+    font-size: 24px;
+    line-height: 116.67%;
+    margin: 0px 0px 30px 0px;
+    @media (max-width: 768px) {
+      & {
+        font-size: 16px;
+      }
+    }
+  }
+
+  &__name,
+  &__mail {
+    padding: 17px;
+    font-size: 16px;
+    line-height: 118.75%;
+    margin: 0px 0px 21px 0px;
+  }
+
+  &__reviews {
+    margin: 0px 0px 14px 0px;
+  }
+
+  &__name::placeholder,
+  &__mail::placeholder,
+  &__reviews::placeholder {
+    font-size: 16px;
+    line-height: 118.75%;
+    color: $blue-title;
+  }
+
+  &__checkbox {
+    margin: 0px 0px 28px 0px;
+  }
+
+  &__label {
+    position: relative;
+    span {
+      font-size: 14px;
+      line-height: 114.29%;
+      color: $blue-title;
+      @media (max-width: 620px) {
+        font-size: 12px;
+      }
+    }
+    span > a {
+      font-weight: 700;
+      color: $accent;
+    }
+    &::before {
+      @media (max-width: 620px) {
+        & {
+          top: -6px;
+        }
+      }
+    }
+    &::after {
+      content: "";
+      display: block;
+      width: 16px;
+      height: 17px;
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease 0s;
+      background: url("../img/contacts/check.svg") 0px 0px no-repeat;
+      z-index: 2;
+      @media (max-width: 620px) {
+        & {
+          top: -2px;
+        }
+      }
+    }
+  }
+
+  &__submit {
+    padding: 17px 44px;
+    background-color: $blue;
+    font-size: 16px;
+    line-height: 118.75%;
+    @media (max-width: 768px) {
+      & {
+        padding: 14px 20px;
+        font-size: 14px;
+      }
+    }
+  }
+}
+.form {
+  &__checkbox {
+    width: 100%;
+    position: relative;
+  }
+  &__reviews {
+    font-family: "Roboto";
+    resize: none;
+    width: 100%;
+    min-height: 134px;
+    background: #e2e2e2;
+    border-radius: 3px;
+    padding: 17px;
+    font-size: 16px;
+    line-height: 118.75%;
+  }
+}

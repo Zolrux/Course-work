@@ -1,0 +1,99 @@
+@import "vars";
+@import "fonts";
+
+.portfolio {
+  padding: 34px 0px 80px;
+  &__title {
+    text-align: center;
+    margin: 0px 0px 48px 0px;
+    @media (max-width: 768px) {
+      & {
+        font-size: 21px;
+        margin: 0px 0px 30px 0px;
+      }
+    }
+  }
+  &__body {
+    background-color: $white;
+    padding: 35px;
+  }
+
+  &__slider:not(:last-child) {
+    margin: 0px 0px 23px 0px;
+  }
+
+  &__map {
+    iframe {
+      width: 100%;
+      min-height: 312px;
+    }
+  }
+  @media (max-width: 768px) {
+    & {
+      padding: 25px 0;
+    }
+  }
+}
+
+.slider-portfolio {
+  display: flex;
+  max-width: 860px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 44px;
+  &__slide {
+    cursor: pointer;
+    margin: 0px 44px 0px 0px;
+    img {
+      margin: 0 auto;
+      transition: box-shadow 0.5s ease;
+    }
+    img:hover {
+      box-shadow: 0px 4px 15px rgba($black, 0.25);
+    }
+    @media (max-width: 992px) {
+      & {
+        margin: 0;
+      }
+    }
+  }
+  &__next,
+  &__prev {
+    background: transparent;
+    cursor: pointer;
+  }
+  .slick-prev,
+  .slick-next {
+    @media (max-width: 992px) {
+      & {
+        display: none !important;
+      }
+    }
+  }
+  &__prev {
+    position: absolute;
+    left: -45px;
+    top: 50%;
+    transform: translate(0, -50%);
+    z-index: 100;
+  }
+  &__next {
+    position: absolute;
+    top: 50%;
+    right: -45px;
+    transform: translate(0, -50%);
+    z-index: 100;
+  }
+  &__prev > svg path[stroke],
+  &__next > svg path[stroke] {
+    transition: stroke 0.5s ease 0s;
+  }
+  &__prev:hover > svg path[stroke],
+  &__next:hover > svg path[stroke] {
+    stroke: $accent;
+  }
+  .slick-list {
+    padding: 20px 0px 40px 20px;
+  }
+}
